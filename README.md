@@ -3,10 +3,33 @@
 
 To connect computers in multiple networks using Open Shortest Path First Routing Protocol and to verify the connectivity between computers.
 
-# EQUIPMENTS REQUIRED
-Desktop computer Cisco Packet Tracer 5.0 Software.
+##  EQUIPMENTS REQUIRED
 
-# IP ASSIGNMENT
+| S.No | Name                 | Quantity |
+|------|----------------------|----------|
+| 1    | Desktop Computer     | 4        |
+| 2    | Cisco 1800 Router    | 2        |
+| 3    | DCE-DTE Cable        | 1        |
+| 4    | Cisco 2900 Switch    | 2        |
+| 5    | CAT 6 Patch Cable    | 6        |
+| 6    | Console Cable        | 2        |
+
+---
+
+## IP ASSIGNMENT
+
+| Name                     | IP Address     | Subnet Mask     | Network      | Class | Gateway        |
+|--------------------------|----------------|-----------------|--------------|-------|----------------|
+| PC0                      | 192.168.0.1    | 255.255.255.0   | 192.168.0.0  | C     | 192.168.0.200  |
+| PC1                      | 192.168.0.2    | 255.255.255.0   | 192.168.0.0  | C     | 192.168.0.200  |
+| PC2                      | 192.168.2.1    | 255.255.255.0   | 192.168.2.0  | C     | 192.168.1.200  |
+| PC3                      | 192.168.2.2    | 255.255.255.0   | 192.168.2.0  | C     | 192.168.1.200  |
+| Router0 FastEthernet0/0  | 192.168.0.200  | 255.255.255.0   | 192.168.0.0  | C     | —              |
+| Router0 Serial2/0        | 192.168.1.1    | 255.255.255.0   | 192.168.1.0  | C     | —              |
+| Router1 FastEthernet0/0  | 192.168.2.200  | 255.255.255.0   | 192.168.2.0  | C     | —              |
+| Router1 Serial2/0        | 192.168.1.2    | 255.255.255.0   | 192.168.1.0  | C     | —              |
+
+---
 
 # NETWORK DIAGRAM
 <img width="961" height="1080" alt="Screenshot (361)" src="https://github.com/user-attachments/assets/7c7c1d14-e1e4-4aae-a3a3-ca1d9f7da45d" />
